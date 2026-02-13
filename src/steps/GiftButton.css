@@ -1,0 +1,25 @@
+.gift-button {
+  padding: 14px 26px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  background: #ffd700;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.gift-button:hover {
+  transform: scale(1.1);
+}
+
+.gift-button.escaping {
+  background: #ff4081;
+  color: white;
+  transition: all 0.1s ease;
+}
+
+.gift-button.escaping:hover {
+  transform: scale(1.15);
+}

@@ -1,0 +1,101 @@
+.sixth-step {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  animation: fadeIn 2s forwards;
+}
+
+.sixth-step h1 {
+  font-size: 2.5rem;
+  color: #e91e63;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.sixth-step h2 {
+  font-size: 2rem;
+  color: #e91e63;
+  margin-top: 0;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.sixth-step .adjective-text {
+  animation: fadeInOut 3s ease-in-out infinite;
+}
+
+.sixth-step .dynamic-text {
+  animation: fadeInOut 3s ease-in-out infinite;
+}
+
+.sixth-step .adjective {
+  color: #ff4081;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+.sixth-step .sixth-text {
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.sixth-step button {
+  padding: 12px 30px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 10px;
+  background: #ff4081;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  margin-top: 20px;
+}
+
+.sixth-step button:hover {
+  transform: scale(1.1);
+  background: #f50057;
+}
+
+.sixth-step .gift-button {
+  background: #FFD700;
+  color: #333;
+  font-weight: 600;
+  margin-top: 30px;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.sixth-step .gift-button:hover {
+  background: #FFC700;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}

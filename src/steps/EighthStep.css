@@ -1,0 +1,84 @@
+.eighth-step {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  animation: fadeIn 2s forwards;
+  max-width: 90vw;
+}
+
+.eighth-step .mary-image {
+  max-width: 400px;
+  width: 90%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(233, 30, 99, 0.3);
+}
+
+.eighth-step .hearts-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.eighth-step .big-heart {
+  width: 80px;
+  height: 80px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.eighth-step .big-heart:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.eighth-step .big-heart:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.eighth-step button {
+  padding: 12px 30px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 10px;
+  background: #ff4081;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  margin-top: 20px;
+}
+
+.eighth-step button:hover {
+  transform: scale(1.1);
+  background: #f50057;
+}
+
+.eighth-step .date-signature {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #e91e63;
+  margin-top: 40px;
+  font-family: 'Georgia', 'Garamond', serif;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
