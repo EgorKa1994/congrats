@@ -1,0 +1,75 @@
+.third-step {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  animation: fadeIn 2s forwards;
+}
+
+.third-step h1 {
+  font-size: 2.5rem;
+  color: #e91e63;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.third-step .holiday-text {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.third-step .holiday-subtitle {
+  font-size: 1.1rem;
+  color: #999;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.third-step .holiday-details {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 30px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.third-step .holiday-details.final-message {
+  font-size: 1.3rem;
+  color: #e91e63;
+  font-weight: 600;
+  font-style: italic;
+  background: linear-gradient(135deg, rgba(233, 30, 99, 0.1) 0%, rgba(255, 64, 129, 0.1) 100%);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #e91e63;
+  margin: 30px 0;
+  box-shadow: 0 4px 15px rgba(233, 30, 99, 0.2);
+}
+
+.third-step button {
+  padding: 12px 30px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 10px;
+  background: #ff4081;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.third-step button:hover {
+  transform: scale(1.1);
+  background: #f50057;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
