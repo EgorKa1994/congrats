@@ -18,18 +18,13 @@ export default function SecondStep({ onNext }) {
       delay: i * 0.1,
     }));
     setSmileys(newSmileys);
-    
-    // Очищаем смайлики через 2 секунды и переходим дальше
-    setTimeout(() => {
-      onNext(beliefAnswer);
-    }, 2000);
+
   };
 
   if (!answer) {
     return (
       <div className="second-step">
         <h1>Слушай, а сегодня обычный день или какой-то специфический? 📅</h1>
-        <p className="date">{dateStr}</p>
         <div className="buttons">
           <button onClick={() => {
             setAnswer("Обычный день");

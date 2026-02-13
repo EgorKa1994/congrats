@@ -68,7 +68,7 @@ export default function GiftButton({ handleDownloadPDF, showMessage }) {
         showMessage
           ? {
               position: "fixed",
-              left: "50%",
+              left: "100px",
               bottom: "50px",
               transform: "translate(-50%, -50%)",
               zIndex: 1000,
